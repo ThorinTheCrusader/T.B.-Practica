@@ -10,7 +10,7 @@
     <header>
     <div class="logo-container">
         <img src="../Assets/MiniWorld.png" class="header-logo">
-        <span class="site-name"></span>
+        <span class="site-name">holder</span>
     </div>
     <nav>
         <a href="#">Contact</a>
@@ -20,18 +20,24 @@
     </header>
 
     <section class="hero">
-    <h1>Exploring history</h1>
-    <p>Select a century and a region on the map to discover the weapons, armor, and culture of the time.</p>
+        <div class="hero-bg"></div> <h1>Exploring the Medieval Eras</h1>
+        <p>Select a century and a region on the map to discover the weapons, armor, and culture of the time.</p>
     </section>
 
-    <section>
+    <p class="before-time">Choose a year</p>
 
-    </section>
-    <main>
-
-    </main>
-    <section>
-
-    </section>
+    <div class="timeline-container">
+        <div class="slider-wrapper">
+            <div id="bubble" class="year-bubble">900</div> </div>
+            <input type="range" min="900" max="1500" value="900" class="timeline-slider" id="year-slider">
+        
+            <div class="timeline-markers">
+                <span>900</span>
+                <span>1500</span>
+            </div>
+        </div>
+    </div>
+   <main>
 </body>
+   </main>
 </html>
