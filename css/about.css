@@ -1,0 +1,52 @@
+@import url('../css/style.css');
+
+.about-hero {
+    background-color: #1a1612;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.85) 80%
+    ), url('../Assets/about-bg.png');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px double var(--gold);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: var(--parchment);
+    margin-bottom: 1rem;
+}
+
+.about-hero p {
+    font-style: italic;
+    color: var(--text-dim);
+    font-size: 1.1rem;
+}
+
+.about-main {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.about-block h2 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #2a2520;
+}
+
+.about-block p {
+    color: var(--text-light);
+    line-height: 1.9;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}

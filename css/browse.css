@@ -1,0 +1,124 @@
+@import url('../css/style.css');
+
+.browse-hero {
+    background-color: #1a1612;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.82) 0%,
+        rgba(0, 0, 0, 0.82) 100%
+    ), url('../Assets/browse-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px double var(--gold);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.browse-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: var(--parchment);
+    margin-bottom: 1rem;
+}
+
+.browse-hero p {
+    font-style: italic;
+    color: var(--text-dim);
+    font-size: 1.1rem;
+}
+
+.browse-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.browse-filters {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #2a2520;
+}
+
+.filter-label {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-right: 0.5rem;
+}
+
+.filter-btn {
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    border: 1px solid #2a2520;
+    padding: 0.35rem 0.85rem;
+    transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.filter-btn:hover {
+    color: var(--gold-light);
+    border-color: var(--gold-light);
+    cursor: pointer
+}
+
+.filter-btn.active {
+    color: var(--ink);
+    background-color: var(--gold);
+    border-color: var(--gold);
+}
+
+.browse-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.browse-card {
+    display: block;
+    background-color: #1a1612;
+    border: 1px solid #2a2520;
+    border-left: 3px solid var(--gold);
+    padding: 1.5rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.browse-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.browse-category {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+}
+
+.browse-card h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--parchment);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.browse-card p {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+}
+
+.filter-btn {
+    cursor: pointer;
+    background: none;
+}

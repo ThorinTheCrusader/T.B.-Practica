@@ -1,0 +1,192 @@
+@import url('../css/style.css');
+
+.entry-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    background-color: #2a1f10;
+    background-image: url('../Assets/hastings-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.entry-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(10, 8, 5, 0.95) 0%,
+        rgba(10, 8, 5, 0.4) 100%
+    );
+}
+
+.entry-hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 3rem 4rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.entry-category {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 0.25rem 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.entry-hero-content h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 4rem);
+    color: var(--parchment);
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+}
+
+.entry-hero-content p {
+    font-style: italic;
+    color: var(--text-dim);
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.entry-main {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    align-items: start;
+}
+
+.entry-body h2 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--parchment);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--text-dim);
+}
+
+.entry-body h2:first-child {
+    margin-top: 0;
+}
+
+.entry-body p {
+    color: var(--text-light);
+    line-height: 1.9;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.entry-facts {
+    background-color: #1a1612;
+    border: 1px solid var(--text-dim);
+    border-top: 3px solid var(--gold);
+    padding: 1.5rem;
+    position: sticky;
+    top: 5rem;
+}
+
+.entry-facts h3 {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+}
+
+.fact {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #2a2520;
+}
+
+.fact:last-child {
+    border-bottom: none;
+}
+
+.fact-label {
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 0.2rem;
+}
+
+.fact-value {
+    color: var(--parchment);
+    font-size: 0.95rem;
+}
+
+.see-also {
+    background-color: #1a1612;
+    border-top: 3px double var(--gold);
+    padding: 4rem 2rem;
+}
+
+.see-also h2 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--parchment);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.see-also-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.see-also-card {
+    display: block;
+    background-color: var(--bg-dark);
+    border: 1px solid #2a2520;
+    border-top: 3px solid var(--gold);
+    padding: 1.5rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.see-also-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.see-also-category {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+}
+
+.see-also-card h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--parchment);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.see-also-card p {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+}

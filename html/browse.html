@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse — Peasant's Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/browse.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+
+            <a href="../html/index.html" class="logo">
+                <span>☩</span>
+                <div class="logo-text">
+                    <span>Peasant's Book</span>
+                    <span>A Medieval Codex</span>
+                </div>
+            </a>
+
+            <nav>
+                <a href="../html/browse.html">Browse</a>
+                <a href="#">Timeline</a>
+                <a href="#">Categories</a>
+                <a href="../html/about.html">About</a>
+            </nav>
+
+            <div class="nav-search">
+                <input type="text" placeholder="Search the codex…">
+                <button>Search</button>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="browse-hero">
+        <h1>Browse All Entries</h1>
+        <p>Every article in the codex, in one place.</p>
+    </section>
+
+    <main class="browse-main">
+
+        <div class="browse-filters">
+            <span class="filter-label">Filter by:</span>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="warfare">Warfare</button>
+            <button class="filter-btn" data-filter="castles">Castles</button>
+            <button class="filter-btn" data-filter="church">The Church</button>
+            <button class="filter-btn" data-filter="peasant">Peasant Life</button>
+            <button class="filter-btn" data-filter="kings">Kings & Courts</button>
+            <button class="filter-btn" data-filter="arms">Arms & Armour</button>
+        </div>
+
+        <div class="browse-grid">
+
+            <a href="../html/entry.html" class="browse-card" data-category="warfare">
+                <span class="browse-category">Warfare</span>
+                <h3>The Battle of Hastings</h3>
+                <p>The Norman invasion that changed England forever.</p>
+            </a>
+
+            <a href="../html/entry.html" class="browse-card" data-category="warfare">
+                <span class="browse-category">Warfare</span>
+                <h3>The Hundred Years War</h3>
+                <p>A century of conflict between England and France.</p>
+            </a>
+
+            <a href="../html/entry.html" class="browse-card" data-category="church">
+                <span class="browse-category">The Church</span>
+                <h3>The Black Death</h3>
+                <p>The plague that killed a third of Europe's population.</p>
+            </a>
+
+            <a href="../html/entry.html" class="browse-card" data-category="kings">
+                <span class="browse-category">Kings & Courts</span>
+                <h3>William the Conqueror</h3>
+                <p>The Norman duke who became the first Norman king of England.</p>
+            </a>
+
+            <a href="../html/entry.html" class="browse-card" data-category="castles">
+                <span class="browse-category">Castles</span>
+                <h3>The Tower of London</h3>
+                <p>A fortress, palace, and prison at the heart of English history.</p>
+            </a>
+
+            <a href="../html/entry.html" class="browse-card" data-category="peasant">
+                <span class="browse-category">Peasant Life</span>
+                <h3>The Feudal System</h3>
+                <p>How medieval society was structured from king to serf.</p>
+            </a>
+
+            <a href="../html/entry.html" class="browse-card" data-category="arms">
+                <span class="browse-category">Arms & Armour</span>
+                <h3>The Longsword</h3>
+                <p>The iconic weapon of the medieval knight.</p>
+            </a>
+
+            <a href="../html/entry.html" class="browse-card" data-category="church">
+                <span class="browse-category">The Church</span>
+                <h3>The Crusades</h3>
+                <p>Holy wars fought in the name of God and political power.</p>
+            </a>
+
+            <a href="../html/entry.html" class="browse-card" data-category="kings">
+                <span class="browse-category">Kings & Courts</span>
+                <h3>Magna Carta</h3>
+                <p>The charter that limited the power of the English king.</p>
+            </a>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <span>☩</span>
+                <p>Peasant's Book</p>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="../html/browse.html">Browse</a>
+                <a href="#">Timeline</a>
+                <a href="#">Categories</a>
+                <a href="../html/about.html">About</a>
+            </nav>
+
+            <p class="footer-copy">© 2026 Peasant's Book</p>
+
+        </div>
+
+    </footer>
+    <script src="../JavaScript/browse.js"></script>
+</body>
+</html>
