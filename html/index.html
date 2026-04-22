@@ -3,41 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codex</title>
+    <title>Peasant's Book — A Medieval Codex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-    <div class="logo-container">
-        <img src="../Assets/MiniWorld.png" class="header-logo">
-        <span class="site-name">holder</span>
-    </div>
-    <nav>
-        <a href="#">Contact</a>
-        <a href="#">Support</a>
-        <a href="#">Archives</a>
-    </nav>
+        <div class="header-inner">
+            <div class="logo">
+                <span>☩</span>
+                <span>Peasant's Book</span>
+            </div>
+
+            <nav>
+                <a href="#">Browse</a>
+                <a href="#">Timeline</a>
+                <a href="#">Categories</a>
+                <a href="#">About</a>
+            </nav>
+
+            <div class="nav-search">
+                <input type="text" placeholder="Search the codex…">
+                <button>Search</button>
+            </div>
+        </div>
     </header>
 
     <section class="hero">
-        <div class="hero-bg"></div> <h1>Exploring the Medieval Eras</h1>
-        <p>Select a century and a region on the map to discover the weapons, armor, and culture of the time.</p>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p>Est. Anno Domini MMXXV</p>
+            <h1>Know Thy <em>Dark Ages</em></h1>
+            <p>Not the whole chronicle, only what matters.</p>
+            <a href="#">Open the Codex</a>
+        </div>
     </section>
 
-    <p class="before-time">Choose a year</p>
+    <section class="categories">
 
-    <div class="timeline-container">
-        <div class="slider-wrapper">
-            <div id="bubble" class="year-bubble">900</div> </div>
-            <input type="range" min="900" max="1500" value="900" class="timeline-slider" id="year-slider">
-        
-            <div class="timeline-markers">
-                <span>900</span>
-                <span>1500</span>
+        <h2>Browse by Chapter</h2>
+
+        <div class="cards-grid">
+
+            <div class="card card-warfare">
+                <h3>Warfare</h3>
+                <p>Battles, sieges, tactics, and the knights who fought them.</p>
+            </div>
+
+            <div class="card card-castles">
+                <h3>Castles & Keeps</h3>
+                <p>Architecture, defense, and the lords within the walls.</p>
+            </div>
+
+            <div class="card card-church">
+                <h3>The Church</h3>
+                <p>Faith, crusades, monasteries, and the Pope's iron grip.</p>
+            </div>
+
+            <div class="card card-peasant">
+                <h3>Peasant Life</h3>
+                <p>How ordinary folk actually lived, toiled, and survived.</p>
+            </div>
+
+            <div class="card card-kings">
+                <h3>Kings & Courts</h3>
+                <p>Power, politics, treachery, and the art of ruling.</p>
+            </div>
+
+            <div class="card card-arms">
+                <h3>Arms & Armour</h3>
+                <p>Swords, shields, plate mail, and the craft of the armourer.</p>
             </div>
         </div>
-    </div>
-   <main>
+
+    </section>
+
+    <section class="featured">
+
+        <span>Featured Entry</span>
+        <h2>The Black Death, 1347–1351</h2>
+        <p>Within five years, a third of Europe lay dead. Understand how a pandemic reshaped feudal society forever.</p>
+        <a href="#">Read the Entry →</a>
+
+    </section>
+
+    <footer>
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <span>☩</span>
+                <p>Peasant's Book</p>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#">Browse</a>
+                <a href="#">Timeline</a>
+                <a href="#">Categories</a>
+                <a href="#">About</a>
+            </nav>
+
+            <p class="footer-copy">© 2026 Peasant's Book</p>
+
+        </div>
+
+    </footer>
 </body>
-   </main>
 </html>

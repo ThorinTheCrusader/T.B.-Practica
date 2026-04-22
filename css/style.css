@@ -1,193 +1,408 @@
-body {
-    background-color: rgb(173, 160, 127);
-    
+:root {
+    --bg-dark:     #0f0d0a;
+    --parchment:   #e8dfc8;
+    --gold:        #c9962a;
+    --gold-light:  #e8b84b;
+    --ink:         #1e1a14;
+    --text-light:  #c8bfa8;
+    --text-dim:    #7a6f5c;
+
+    --font-display: 'Cinzel', serif;
+    --font-body:    'EB Garamond', serif;
 }
 
-* {
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 header {
-    background-color: rgb(113, 99, 61);
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--gold);
+    padding: 1rem 2rem;
+}
+
+.header-inner {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    padding: 1px 5%;
-    position: sticky;
-    background: linear-gradient(to bottom, rgb(113, 99, 61), rgb(93, 82, 53));
-    border-bottom: 2px solid rgba(212, 175, 55, 0.5);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.logo-container {
+nav {
     display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.header-logo {
-    height: 60px;
-    width: auto;
-}
-
-.site-name {
-    font-weight: bold;
-    color: white;
-    letter-spacing: 2px;
-    font-family: serif;
-    font-size: 25px;
+    gap: 2rem;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-family: serif;
-    font-size: 1rem;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-    transition: color 0.3s ease;
+    color: var(--text-light);
 }
+
 nav a:hover {
-    color: #d4af37;
+    color: var(--gold-light);
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--text-dim);
+    overflow: hidden;
+}
+
+.nav-search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-light);
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 0.85rem;
+    padding: 0.35rem 0.7rem;
+    width: 180px;
+}
+
+.nav-search input::placeholder {
+    color: var(--text-dim);
+}
+
+.nav-search button {
+    background: var(--gold);
+    border: none;
+    cursor: pointer;
+    padding: 0.35rem 0.7rem;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.nav-search button:hover {
+    background: var(--gold-light);
+}
+
+.nav-search:focus-within {
+    border-color: var(--gold);
 }
 
 .hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background-color: #2a1f10;
+    background-image: url('../Assets/hero-bg-v2.jpg');
+    background-size: cover;
+    background-position: center;
     position: relative;
-    text-align: center;
-    padding: 120px 20px;
-    color: white;
-    font-family: serif;
-    overflow: hidden;
-    margin-bottom: 20px;
 }
 
-.hero-bg {
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.515)), 
-                url("../Assets/HeroBackground.jpg") center/cover no-repeat;
-    z-index: 0;
-    transition: transform 2s ease;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to right,
+        rgba(10, 8, 5, 0.92) 0%,
+        rgba(10, 8, 5, 0.3) 100%
+    );
 }
 
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 30%, rgba(30, 30, 25, 0.516) 100%);
-    
-
-    opacity: 0; 
-    
-    transition: opacity 0.8s ease; 
+.hero-content {
+    position: relative;
     z-index: 1;
+    padding: 4rem 2rem;
+    max-width: 580px;
+    margin-left: 8vw;
 }
 
-.hero:hover .hero-bg {
-    transform: scale(1.1); 
+.hero-content p:first-child {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
 }
 
-.hero:hover::after {
-    opacity: 1; 
+.hero-content h1 {
+    font-family: var(--font-display);
+    font-size: 5rem;
+    color: var(--parchment);
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
 }
 
-.hero h1, .hero p {
-    position: relative;
-    z-index: 2;
+.hero-content h1 em {
+    color: var(--gold);
+    font-family: var(--font-body);
+    font-style: italic;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+.hero-content p:last-of-type {
+    color: var(--text-light);
+    max-width: 420px;
+    margin-bottom: 2rem;
 }
 
-.hero p {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    max-width: 600px;
-    margin: 0 auto;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+.hero-content a {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--bg-dark);
+    background-color: var(--gold);
+    padding: 0.85rem 2rem;
+    border: 2px solid var(--gold);
+    transition: 0.4s;
 }
 
-.before-time {
+.hero-content a:hover {
+    background-color: transparent;
+    color: var(--gold-light);
+    border-color: var(--gold-light);
+}
+
+.categories {
+    background-color: #1a1612;
+    border-top: 3px double var(--gold);
+    padding: 5rem 2rem;
+}
+
+.categories h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--parchment);
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    color: white;
-    font-family: serif;
-    font-size: 1.6rem;
+    margin-bottom: 3rem;
 }
-/* the time thing*/
 
-.timeline-container {
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    color: var(--text-light);
+    padding: 8rem 1.5rem 1.5rem;
+    border: 1px solid #c9bc9e;
+    border-bottom: 3px solid var(--gold);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-warfare {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.75) 100%
+    ), url('../Assets/warfare.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-castles {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.75) 100%
+    ), url('../Assets/castles.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-church {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.75) 100%
+    ), url('../Assets/church.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-peasant {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.75) 100%
+    ), url('../Assets/peasant.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-kings {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.75) 100%
+    ), url('../Assets/kings.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-arms {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.75) 100%
+    ), url('../Assets/arms.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #b0aeaa;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.featured {
+    background-color: var(--bg-dark);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.7) 100%
+    ), url('../Assets/black-death.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid var(--text-dim);
+    border-bottom: 1px solid var(--text-dim);
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.featured span {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 0.25rem 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.featured h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: var(--parchment);
+    margin-bottom: 1rem;
+}
+
+.featured p {
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.8;
+}
+
+.featured a {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    color: var(--gold-light);
+    border-bottom: 1px solid var(--gold-light);
+    padding-bottom: 2px;
+}
+
+.featured a:hover {
+    color: var(--parchment);
+    border-color: var(--parchment);
+}
+
+footer {
+    background-color: var(--bg-dark);
+    border-top: 3px double var(--gold);
+    padding: 1.5rem 3rem;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand {
     display: flex;
     flex-direction: column;
-    position: relative; 
-    width: 30%;
-    max-width: 1000px;
-    margin: 0 auto; 
-    padding: 6px;
     align-items: center;
-    background-color: rgb(95, 83, 52);
-    border: 5px solid rgba(212, 175, 55, 0.5);
+    gap: 0.3rem;
+    text-align: center;
 }
 
-.timeline-slider {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 70%;
-    height: 10px;
-    background: #3d3522;
-    border-radius: 5px;
-    outline: none;
-    cursor: pointer;
-    margin: 20px 0;
+.footer-brand span {
+    font-size: 1.2rem;
+    color: var(--gold);
 }
 
-.timeline-markers {
+.footer-brand p:first-of-type {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    color: var(--gold);
+}
+
+.footer-brand p:last-of-type {
+    font-style: italic;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+}
+
+.footer-nav {
     display: flex;
-    color: white;
-    justify-content: space-between;
-    width: 75%
-}
-.slider-wrapper {
-    display: flex;
-    align-items: center; /* Vertically aligns text and slider */
-    justify-content: center;
-    gap: 20px;           /* Space between the years and the slider bar */
-    width: 100%;
-    position: relative;
+    gap: 2rem;
 }
 
-.input-container {
-    position: relative;
-    flex-grow: 1;        /* This makes the slider bar stretch to fill the space */
+.footer-nav a {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
 }
 
-.timeline-slider {
-    width: 100%;         /* Ensures the bar fills the flex space */
-    -webkit-appearance: none;
-    height: 8px;
-    background: #3d3522;
-    border-radius: 5px;
+.footer-nav a:hover {
+    color: var(--gold-light);
 }
 
-.year-label {
-    color: white;
-    font-family: serif;
-    font-weight: bold;
-    min-width: 40px;     /* Keeps the labels from shifting */
+.footer-copy {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
 }
