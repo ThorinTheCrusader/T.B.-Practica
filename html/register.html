@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About — Peasant's Book</title>
+    <title>Register — Peasant's Book</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/register.css">
 </head>
 <body>
+
     <header>
         <div class="header-inner">
 
@@ -38,32 +39,57 @@
         </div>
     </header>
 
-    <section class="about-hero">
-        <h1>About the Codex</h1>
-        <p>What this is, why it exists, and who made it.</p>
-    </section>
+    <main class="auth-main">
 
-    <main class="about-main">
+        <div class="auth-box">
 
-        <div class="about-block">
-            <h2>What is the Peasant's Book?</h2>
-            <p>The Peasant's Book is a medieval reference codex built for people who want real answers without wading through academic language or endless footnotes. Think of it as Wikipedia, but stripped down, focused, and designed for the Middle Ages only.</p>
-            <p>Every entry covers exactly what you need to know. No filler, no tangents. Just the essential history, clearly told.</p>
-        </div>
+            <div class="auth-header">
+                <span>☩</span>
+                <h1>Join the Codex</h1>
+                <p>Create your account to begin.</p>
+            </div>
 
-        <div class="about-block">
-            <h2>Why "Peasant's Book"?</h2>
-            <p>In medieval Europe, knowledge was gatekept. Books were written in Latin, owned by the Church, and completely inaccessible to ordinary people. The Peasant's Book is named in defiance of that, history written for everyone, not just scholars.</p>
-        </div>
+            <form id="register-form">
 
-        <div class="about-block">
-            <h2>Sources & Accuracy</h2>
-            <p>Entries are written based on established historical scholarship. Where historians disagree, we say so. Always cross-reference with academic sources for serious research.</p>
-        </div>
+                <div class="form-group">
+                    <label for="nume">Name</label>
+                    <input type="text" id="name">
+                </div>
 
-        <div class="about-block">
-            <h2>The Project</h2>
-            <p>The Peasant's Book is an independent effort to make medieval history accessible to everyone. Built with care, designed with intention, no frameworks, no templates, just craftsmanship.</p>
+                <div class="form-group">
+                    <label for="prenume">Surname</label>
+                    <input type="text" id="surname">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="ex: something@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefon">Phone</label>
+                    <input type="text" id="phone" placeholder="ex: 0712345678">
+                </div>
+
+                <div class="form-group">
+                    <label for="parola">Password</label>
+                    <input type="password" id="pass" placeholder="min. 8 characters">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmare">Confirm Password</label>
+                    <input type="password" id="confirm">
+                </div>
+
+                <div id="error-msg" class="error-msg"></div>
+                <div id="success-msg" class="success-msg"></div>
+
+                <button type="submit" class="auth-btn">Register</button>
+
+                <p class="auth-switch">Already have an account? <a href="../html/login.html">Login</a></p>
+
+            </form>
+
         </div>
 
     </main>
@@ -90,6 +116,7 @@
         </div>
 
     </footer>
-    <script src="../JavaScript/main.js"></script>
+
+    <script src="../JavaScript/register.js"></script>
 </body>
 </html>

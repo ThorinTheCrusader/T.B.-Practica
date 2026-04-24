@@ -1,0 +1,38 @@
+[
+    {
+        "title": "The Battle of Hastings",
+        "category": "Warfare",
+        "date": "1066",
+        "description": "The Norman invasion that changed England forever."
+    },
+    {
+        "title": "The Black Death",
+        "category": "The Church",
+        "date": "1347-1351",
+        "description": "The plague that killed a third of Europe's population."
+    },
+    {
+        "title": "The Feudal System",
+        "category": "Peasant Life",
+        "date": "900-1300",
+        "description": "How medieval society was structured from king to serf."
+    },
+    {
+        "title": "The Crusades",
+        "category": "The Church",
+        "date": "1095-1291",
+        "description": "Holy wars fought in the name of God and political power."
+    },
+    {
+        "title": "Magna Carta",
+        "category": "Kings & Courts",
+        "date": "1215",
+        "description": "The charter that limited the power of the English king."
+    },
+    {
+        "title": "The Tower of London",
+        "category": "Castles",
+        "date": "1078",
+        "description": "A fortress, palace, and prison at the heart of English history."
+    }
+]

@@ -1,0 +1,85 @@
+@import url('../css/style.css');
+
+.entries-hero {
+    background-color: #1a1612;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.82) 0%,
+        rgba(0, 0, 0, 0.82) 100%
+    ), url('../Assets/browse-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px double var(--gold);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.entries-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: var(--parchment);
+    margin-bottom: 1rem;
+}
+
+.entries-hero p {
+    font-style: italic;
+    color: var(--text-dim);
+    font-size: 1.1rem;
+}
+
+.entries-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.entries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.entry-card {
+    display: block;
+    background-color: #1a1612;
+    border: 1px solid #2a2520;
+    border-top: 3px solid var(--gold);
+    padding: 1.5rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.entry-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.entry-card-category {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+}
+
+.entry-card-date {
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    float: right;
+}
+
+.entry-card h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--parchment);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    clear: both;
+}
+
+.entry-card p {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+}
