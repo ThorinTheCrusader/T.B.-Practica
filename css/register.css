@@ -138,3 +138,61 @@
     color: var(--gold);
     border-bottom: 1px solid var(--gold);
 }
+
+.phone-input {
+    display: flex;
+    border: 1px solid var(--text-dim);
+    transition: border-color 0.25s ease;
+    overflow: hidden;
+}
+
+.phone-input:focus-within {
+    border-color: var(--gold);
+}
+
+.phone-input select {
+    background-color: #0f0d0a;
+    color: var(--text-light);
+    border: none;
+    border-right: 1px solid var(--text-dim);
+    border-radius: 0;
+    width: auto;
+    padding: 0.7rem 0.5rem;
+    flex-shrink: 0;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.phone-input input {
+    border: none;
+    flex: 1;
+}
+
+.phone-input input:focus {
+    border-color: transparent;
+}
+
+@media (max-width: 768px) {
+
+    .auth-main {
+        padding: 2rem 1rem;
+        align-items: flex-start;
+    }
+
+    .auth-box {
+        padding: 2rem 1.5rem;
+    }
+
+    .phone-input {
+        flex-direction: column;
+    }
+
+    .phone-input select {
+        border-right: none;
+        border-bottom: 1px solid var(--text-dim);
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,174 @@
+@import url('../css/style.css');
+
+.timeline-hero {
+    background-color: #1a1612;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.82) 0%,
+        rgba(0, 0, 0, 0.82) 100%
+    ), url('../Assets/browse-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px double var(--gold);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.timeline-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: var(--parchment);
+    margin-bottom: 1rem;
+}
+
+.timeline-hero p {
+    font-style: italic;
+    color: var(--text-dim);
+    font-size: 1.1rem;
+}
+
+.timeline-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.timeline-range {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+/* The vertical line */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--gold) 5%,
+        var(--gold) 95%,
+        transparent
+    );
+    transform: translateX(-50%);
+}
+
+/* Individual event */
+.timeline-event {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: calc(50% + 3rem);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-event:nth-child(even) {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: calc(50% + 3rem);
+}
+
+/* The dot on the line */
+.timeline-event::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 1.2rem;
+    width: 10px;
+    height: 10px;
+    background-color: var(--gold);
+    border: 2px solid var(--bg-dark);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.25s ease;
+}
+
+.timeline-event:hover::after {
+    transform: translateX(-50%) scale(1.5);
+}
+
+/* The card */
+.timeline-card {
+    display: block;
+    background-color: #1a1612;
+    border: 1px solid #2a2520;
+    border-top: 3px solid var(--gold);
+    padding: 1.2rem 1.5rem;
+    max-width: 340px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-year {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+}
+
+.timeline-category {
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-card h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--parchment);
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+}
+
+.timeline-card p {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+
+    .timeline::before {
+        left: 1rem;
+    }
+
+    .timeline-event {
+        justify-content: flex-start;
+        padding-right: 0;
+        padding-left: 3rem;
+    }
+
+    .timeline-event:nth-child(even) {
+        padding-left: 3rem;
+    }
+
+    .timeline-event::after {
+        left: 1rem;
+    }
+
+    .timeline-card {
+        max-width: 100%;
+    }
+
+}

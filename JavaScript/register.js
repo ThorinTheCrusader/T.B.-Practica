@@ -24,6 +24,8 @@ form.addEventListener("submit", function(event) {
     const phone = document.getElementById('phone').value.trim()
     const pass = document.getElementById('pass').value.trim()
     const confirm = document.getElementById('confirm').value.trim()
+    const country = document.getElementById('country');
+    const prefix = country.options[country.selectedIndex].dataset.prefix;
 
     if (!name || !surname || !email || !phone || !pass || !confirm) {
         showError('All fields are required.');
@@ -52,11 +54,23 @@ form.addEventListener("submit", function(event) {
         return;
     }
 
+    if (!prefix) {
+    showError('Please select your country.');
+    return;
+    }
+
+    if (!phone) {
+        showError('Please enter your phone number.');
+        return;
+    }
+
+    const fullPhone = prefix + phone;
+
     const user = {
         name: name,
         surname: surname,
         email: email,
-        phone: phone,
+        phone: fullPhone,
         password: pass
     };
 

@@ -145,3 +145,15 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+
+    .browse-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .browse-filters {
+        gap: 0.5rem;
+    }
+
+}

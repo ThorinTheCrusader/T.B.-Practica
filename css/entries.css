@@ -83,3 +83,11 @@
     color: var(--text-dim);
     line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+
+    .entries-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

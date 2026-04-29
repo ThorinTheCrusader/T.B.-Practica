@@ -437,6 +437,13 @@ footer {
     .header-inner {
         flex-direction: column;
         gap: 1rem;
+        padding: 1rem;
+    }
+
+    .main-nav, nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .nav-search {
@@ -460,6 +467,11 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 1.5rem;
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 }

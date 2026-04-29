@@ -50,3 +50,11 @@
     font-size: 1.1rem;
     margin-bottom: 0.75rem;
 }
+
+@media (max-width: 768px) {
+
+    .about-main {
+        padding: 3rem 1.5rem;
+    }
+
+}

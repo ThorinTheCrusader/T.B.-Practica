@@ -1,38 +1,738 @@
 [
     {
+        "id": 1,
         "title": "The Battle of Hastings",
+        "image": "hastings-bg.jpg",
         "category": "Warfare",
         "date": "1066",
-        "description": "The Norman invasion that changed England forever."
+        "year": 1066,
+        "description": "The Norman invasion that changed England forever.",
+        "subtitle": "14 October 1066 — East Sussex, England",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "The Battle of Hastings was fought on 14 October 1066 between the Norman-French army of William, the Duke of Normandy, and the English army led by King Harold II. It was the decisive Norman victory that changed the course of English history forever."
+            },
+            {
+                "heading": "Background",
+                "content": "When King Edward the Confessor died in January 1066 without a clear heir, three men claimed the English throne — Harold Godwinson, Harald Hardrada of Norway, and William of Normandy. Harold was crowned king the same day Edward died, which set the stage for two invasions."
+            },
+            {
+                "heading": "The Battle",
+                "content": "William's forces landed at Pevensey on 28 September 1066. Harold, having just defeated Hardrada in the north, marched his exhausted army south. The battle lasted most of the day. Harold was killed — according to legend, by an arrow through the eye — and English resistance collapsed."
+            },
+            {
+                "heading": "Aftermath",
+                "content": "William was crowned King of England on Christmas Day 1066 at Westminster Abbey. The Norman conquest transformed English language, culture, law, and society in ways still felt today."
+            }
+        ],
+        "facts": [
+            {"label": "Date", "value": "14 October 1066"},
+            {"label": "Location", "value": "East Sussex, England"},
+            {"label": "Result", "value": "Norman Victory"},
+            {"label": "Key Figure", "value": "William of Normandy"},
+            {"label": "Casualties", "value": "Unknown — estimated thousands"}
+        ]
     },
     {
+        "id": 2,
+        "title": "The Hundred Years War",
+        "image": "hyw.jpg",
+        "category": "Warfare",
+        "date": "1337-1453",
+        "year": 1337,
+        "description": "A century of conflict between England and France.",
+        "subtitle": "1337–1453 — France and England",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "The Hundred Years War was a series of armed conflicts between the kingdoms of England and France, lasting from 1337 to 1453. Despite its name, the war was not a single continuous conflict but a series of wars interrupted by truces and peace treaties."
+            },
+            {
+                "heading": "Causes",
+                "content": "The war began over disputes about the English crown's claim to the French throne, control of the Duchy of Aquitaine, and trade rivalries. When French King Charles IV died without an heir in 1328, English King Edward III claimed the French throne through his mother."
+            },
+            {
+                "heading": "Key Events",
+                "content": "Major English victories at Crécy (1346) and Agincourt (1415) demonstrated the devastating effectiveness of the English longbow. Joan of Arc's emergence in 1429 reinvigorated French resistance, leading to a dramatic reversal of fortunes that ultimately expelled the English from France."
+            },
+            {
+                "heading": "Aftermath",
+                "content": "England lost all its French territories except Calais. The war strengthened French national identity and accelerated the decline of feudalism in both countries. It also spurred military innovation, making armored knights increasingly obsolete."
+            }
+        ],
+        "facts": [
+            {"label": "Duration", "value": "1337–1453"},
+            {"label": "Location", "value": "France, England, Iberia"},
+            {"label": "Result", "value": "French Victory"},
+            {"label": "Key Figure", "value": "Joan of Arc"},
+            {"label": "Treaties", "value": "Treaty of Troyes, 1420"}
+        ]
+    },
+    {
+        "id": 3,
         "title": "The Black Death",
+        "image": "black-death.jpg",
         "category": "The Church",
         "date": "1347-1351",
-        "description": "The plague that killed a third of Europe's population."
+        "year": 1347,
+        "description": "The plague that killed a third of Europe's population.",
+        "subtitle": "1347–1351 — Europe and Asia",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "The Black Death was the most devastating pandemic in human history, killing an estimated 30 to 60 percent of Europe's population between 1347 and 1351. Caused by the bacterium Yersinia pestis, it arrived in Europe via trade ships from Asia."
+            },
+            {
+                "heading": "Spread",
+                "content": "The plague spread rapidly along trade routes. It entered Europe through Sicily in October 1347 when ships docked carrying sailors who were already dying. Within months it had spread across Italy, France, Spain, and England, killing entire villages in its wake."
+            },
+            {
+                "heading": "Impact on the Church",
+                "content": "The Church suffered devastating losses — priests who administered last rites were particularly vulnerable. The inability of prayer and Church authority to stop the plague severely damaged its moral authority and contributed to growing religious skepticism."
+            },
+            {
+                "heading": "Legacy",
+                "content": "The Black Death fundamentally reshaped European society. Labor became scarce, empowering surviving peasants to demand better wages and conditions. It accelerated the decline of feudalism and is considered a turning point between the medieval and modern worlds."
+            }
+        ],
+        "facts": [
+            {"label": "Period", "value": "1347–1351"},
+            {"label": "Cause", "value": "Yersinia pestis bacterium"},
+            {"label": "Deaths", "value": "75–200 million worldwide"},
+            {"label": "Origin", "value": "Central Asia"},
+            {"label": "Impact", "value": "30–60% of Europe killed"}
+        ]
     },
     {
+        "id": 4,
+        "title": "William the Conqueror",
+        "image": "william.jpg",
+        "category": "Kings & Courts",
+        "date": "1028-1087",
+        "year": 1028,
+        "description": "The Norman duke who became the first Norman king of England.",
+        "subtitle": "1028–1087 — Normandy and England",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "William the Conqueror, born around 1028, was the Duke of Normandy who conquered England in 1066 and became its first Norman king. His reign fundamentally transformed English society, language, and governance."
+            },
+            {
+                "heading": "Early Life",
+                "content": "Born the illegitimate son of Duke Robert I of Normandy, William faced a turbulent childhood marked by assassination attempts on his life. He became Duke of Normandy at age seven and spent years consolidating his power against rebellious Norman barons."
+            },
+            {
+                "heading": "The Conquest",
+                "content": "After defeating Harold II at Hastings, William marched on London, where he was crowned King of England on Christmas Day 1066. He spent the next years suppressing English rebellions with brutal efficiency, including the infamous Harrying of the North in 1069-70."
+            },
+            {
+                "heading": "Legacy",
+                "content": "William commissioned the Domesday Book in 1086 — a comprehensive survey of England's landholdings and resources. He introduced Norman French into the English court, permanently influencing the English language with thousands of French words."
+            }
+        ],
+        "facts": [
+            {"label": "Born", "value": "c. 1028, Falaise, Normandy"},
+            {"label": "Died", "value": "9 September 1087"},
+            {"label": "Reign", "value": "1066–1087"},
+            {"label": "Dynasty", "value": "Norman"},
+            {"label": "Key Achievement", "value": "Conquest of England, 1066"}
+        ]
+    },
+    {
+        "id": 5,
+        "title": "The Tower of London",
+        "image": "london-tower.jpg",
+        "category": "Castles",
+        "date": "1078",
+        "year": 1078,
+        "description": "A fortress, palace, and prison at the heart of English history.",
+        "subtitle": "Founded 1078 — London, England",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "The Tower of London is a historic castle on the north bank of the River Thames. Founded in 1078 by William the Conqueror, it has served as a royal palace, fortress, prison, place of execution, and treasury over its nearly 1000 year history."
+            },
+            {
+                "heading": "Construction",
+                "content": "William the Conqueror began construction of the White Tower in 1078 as a demonstration of Norman power over the conquered English. The distinctive white stone was imported from Caen in Normandy, making it visually distinct from surrounding English buildings."
+            },
+            {
+                "heading": "As a Prison",
+                "content": "The Tower became infamous as a prison for high-profile captives. Among its most notable prisoners were Anne Boleyn, Catherine Howard, Lady Jane Grey, and Sir Thomas More — many of whom were executed on Tower Green. The mysterious disappearance of the Princes in the Tower in 1483 remains one of history's great unsolved mysteries."
+            },
+            {
+                "heading": "Legacy",
+                "content": "Today the Tower houses the Crown Jewels of England and is one of the most visited tourist attractions in the world. Its ravens are famously said to protect the Crown — legend holds that if they ever leave, the kingdom will fall."
+            }
+        ],
+        "facts": [
+            {"label": "Founded", "value": "1078"},
+            {"label": "Location", "value": "London, England"},
+            {"label": "Founded by", "value": "William the Conqueror"},
+            {"label": "Type", "value": "Royal castle and fortress"},
+            {"label": "Status", "value": "UNESCO World Heritage Site"}
+        ]
+    },
+    {
+        "id": 6,
         "title": "The Feudal System",
+        "image": "feudal.jpg",
         "category": "Peasant Life",
         "date": "900-1300",
-        "description": "How medieval society was structured from king to serf."
+        "year": 900,
+        "description": "How medieval society was structured from king to serf.",
+        "subtitle": "c. 900–1300 — Western Europe",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "The feudal system was the dominant social and political structure of medieval Europe from roughly the 9th to 15th centuries. It organized society into a strict hierarchy based on land ownership and military service, with the king at the top and serfs at the bottom."
+            },
+            {
+                "heading": "The Hierarchy",
+                "content": "At the top sat the king, who owned all land. Below him were lords and barons who received land in exchange for military loyalty. Knights served the lords in battle. At the bottom were peasants and serfs — the vast majority of the population — who worked the land in exchange for protection."
+            },
+            {
+                "heading": "Peasant Life",
+                "content": "Most medieval people were peasants who rarely traveled more than a few miles from their village. They paid taxes in labor, crops, and money to their lord. Life was governed by the agricultural calendar — plowing, planting, and harvesting consumed most of the year."
+            },
+            {
+                "heading": "Decline",
+                "content": "The Black Death dramatically reduced the peasant population, giving survivors bargaining power they had never had before. Combined with increasing trade, growing towns, and peasant revolts, the feudal system gradually collapsed by the end of the 15th century."
+            }
+        ],
+        "facts": [
+            {"label": "Period", "value": "c. 900–1300"},
+            {"label": "Region", "value": "Western Europe"},
+            {"label": "Key Feature", "value": "Land for loyalty exchange"},
+            {"label": "Bottom tier", "value": "Serfs and peasants"},
+            {"label": "Decline", "value": "14th–15th century"}
+        ]
     },
     {
+        "id": 7,
+        "image": "longsword.jpg",
+        "title": "The Longsword",
+        "category": "Arms & Armour",
+        "date": "1100-1500",
+        "year": 1100,
+        "description": "The iconic weapon of the medieval knight.",
+        "subtitle": "c. 1100–1500 — Western Europe",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "The longsword was the quintessential weapon of the medieval knight, used across Europe from roughly the 11th to 16th centuries. Designed for use with one or two hands, it combined reach, cutting power, and thrusting capability into a single versatile weapon."
+            },
+            {
+                "heading": "Design",
+                "content": "A typical longsword measured between 100 and 130 centimeters in total length, with a double-edged blade of around 85 to 110 centimeters. The cruciform hilt protected the hand, while the pommel balanced the blade and could be used as a striking weapon in close quarters."
+            },
+            {
+                "heading": "Combat Technique",
+                "content": "Contrary to popular myth, longsword combat was highly technical and athletic. Medieval fighting manuals — called fechtbücher — document complex systems of attack, defense, and grappling. Masters like Johannes Liechtenauer developed entire schools of swordsmanship still studied today."
+            },
+            {
+                "heading": "Decline",
+                "content": "The longsword declined with the widespread adoption of firearms in the 16th century. As plate armor became obsolete against guns, so too did the weapons designed to defeat it. By 1600 the longsword had largely been replaced by lighter, faster rapiers."
+            }
+        ],
+        "facts": [
+            {"label": "Period", "value": "c. 1100–1500"},
+            {"label": "Length", "value": "100–130 cm"},
+            {"label": "Weight", "value": "1.1–1.8 kg"},
+            {"label": "Material", "value": "High carbon steel"},
+            {"label": "Usage", "value": "One or two handed"}
+        ]
+    },
+    {
+        "id": 8,
+        "image": "crusades.jpg",
         "title": "The Crusades",
         "category": "The Church",
         "date": "1095-1291",
-        "description": "Holy wars fought in the name of God and political power."
+        "year": 1095,
+        "description": "Holy wars fought in the name of God and political power.",
+        "subtitle": "1095–1291 — Europe and the Holy Land",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "The Crusades were a series of religious wars sanctioned by the Latin Church, aimed at recovering the Holy Land from Islamic rule. Between 1095 and 1291, eight major crusades were launched, drawing warriors from across Christian Europe."
+            },
+            {
+                "heading": "The First Crusade",
+                "content": "Pope Urban II launched the First Crusade in 1095 at the Council of Clermont, calling on Christians to take up arms and recover Jerusalem. An army of roughly 100,000 set out and, against considerable odds, captured Jerusalem in 1099 — massacring much of its Muslim and Jewish population."
+            },
+            {
+                "heading": "Later Crusades",
+                "content": "Subsequent crusades met with diminishing success. Saladin recaptured Jerusalem in 1187, prompting the Third Crusade led by Richard I of England. Despite military successes, Richard failed to retake the city. The Fourth Crusade notoriously sacked the Christian city of Constantinople in 1204."
+            },
+            {
+                "heading": "Legacy",
+                "content": "The Crusades had profound and lasting consequences — increasing trade between East and West, transmitting Islamic scholarship to Europe, and deepening religious tensions between Christianity and Islam that persist to this day."
+            }
+        ],
+        "facts": [
+            {"label": "Period", "value": "1095–1291"},
+            {"label": "Launched by", "value": "Pope Urban II"},
+            {"label": "Major Crusades", "value": "8 major campaigns"},
+            {"label": "Key target", "value": "Jerusalem"},
+            {"label": "Final outcome", "value": "Christian defeat"}
+        ]
     },
     {
+        "id": 9,
+        "image": "magna.jpg",
         "title": "Magna Carta",
         "category": "Kings & Courts",
         "date": "1215",
-        "description": "The charter that limited the power of the English king."
+        "year": 1215,
+        "description": "The charter that limited the power of the English king.",
+        "subtitle": "15 June 1215 — Runnymede, England",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "Magna Carta, meaning Great Charter, was a royal charter of rights agreed to by King John of England at Runnymede on 15 June 1215. Forced upon him by rebellious barons, it established for the first time that the king was subject to the rule of law."
+            },
+            {
+                "heading": "Background",
+                "content": "King John's reign was marked by military failures, heavy taxation, and conflict with the Church. By 1215 a group of powerful barons had had enough. They seized London and forced John to negotiate, producing a document that listed 63 clauses limiting royal power."
+            },
+            {
+                "heading": "Key Clauses",
+                "content": "The most significant clauses established that no free man could be imprisoned without lawful judgment, and that justice could not be sold or denied. These principles — due process and the rule of law — became cornerstones of modern legal systems worldwide."
+            },
+            {
+                "heading": "Legacy",
+                "content": "Though King John immediately sought to annul it and later kings frequently ignored it, Magna Carta became a powerful symbol of liberty. It directly influenced the United States Constitution, the Universal Declaration of Human Rights, and constitutional law across the world."
+            }
+        ],
+        "facts": [
+            {"label": "Signed", "value": "15 June 1215"},
+            {"label": "Location", "value": "Runnymede, England"},
+            {"label": "Signed by", "value": "King John of England"},
+            {"label": "Clauses", "value": "63 original clauses"},
+            {"label": "Significance", "value": "Foundation of constitutional law"}
+        ]
     },
     {
-        "title": "The Tower of London",
+        "id": 10,
+        "title": "The Crossbow",
+        "image": "crossbow.jpg",
+        "category": "Arms & Armour",
+        "date": "950-1500",
+        "year": 950,
+        "description": "The weapon that democratized warfare and terrified the knightly class.",
+        "subtitle": "c. 950–1500 — Western Europe",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "The crossbow was one of the most revolutionary weapons of the medieval period. Unlike the longbow, which required years of training and immense physical strength, the crossbow could be operated by an untrained soldier after only a few hours of instruction. This made it a great equalizer on the battlefield."
+            },
+            {
+                "heading": "Design",
+                "content": "A crossbow consists of a horizontal bow mounted on a stock, with a mechanism to hold and release the string. Medieval crossbows evolved from simple wooden constructions to sophisticated composite bows reinforced with horn and sinew, capable of penetrating plate armor at close range."
+            },
+            {
+                "heading": "Impact on Warfare",
+                "content": "The crossbow fundamentally challenged the dominance of the armored knight. A peasant with a crossbow could kill a nobleman worth thousands of pounds of equipment and years of training. Pope Innocent II banned its use against Christians in 1139 — a testament to how threatening it was to the social order."
+            },
+            {
+                "heading": "Decline",
+                "content": "The crossbow was gradually replaced by firearms in the 15th and 16th centuries. Gunpowder weapons were cheaper to produce and easier to use, making the crossbow obsolete. However it remained in use for hunting long after it disappeared from the battlefield."
+            }
+        ],
+        "facts": [
+            {"label": "Period", "value": "c. 950–1500"},
+            {"label": "Draw weight", "value": "Up to 1,200 lbs"},
+            {"label": "Effective range", "value": "50–100 meters"},
+            {"label": "Banned by", "value": "Pope Innocent II, 1139"},
+            {"label": "Replaced by", "value": "Firearms, 15th century"}
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Plate Armour",
+        "image": "plate-armor.jpg",
+        "category": "Arms & Armour",
+        "date": "1200-1500",
+        "year": 1200,
+        "description": "The pinnacle of medieval military technology — steel from head to toe.",
+        "subtitle": "c. 1200–1500 — Western Europe",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "Plate armour represented the apex of medieval military technology. A full suit of plate armour, known as a harness, covered the wearer from head to toe in shaped steel plates, offering unprecedented protection while allowing surprising freedom of movement."
+            },
+            {
+                "heading": "Development",
+                "content": "Plate armour evolved gradually from chainmail during the 13th century. Smiths began adding solid plates to protect the knees and elbows, then the chest, and eventually the entire body. By the 15th century, full plate harnesses were being produced that were masterpieces of engineering and craftsmanship."
+            },
+            {
+                "heading": "Construction",
+                "content": "A full harness consisted of over 200 individual pieces, all carefully shaped and articulated to allow movement. The steel was carefully tempered and shaped by master armoursmiths over many months. A high quality suit could cost the equivalent of a small farm — only the wealthiest knights could afford the finest armour."
+            },
+            {
+                "heading": "Decline",
+                "content": "The widespread adoption of firearms made plate armour increasingly impractical. Armour was made thicker to resist bullets, but eventually became too heavy to be practical. By the early 17th century, most soldiers had abandoned full plate in favor of lighter protection."
+            }
+        ],
+        "facts": [
+            {"label": "Period", "value": "c. 1200–1500"},
+            {"label": "Weight", "value": "15–25 kg for a full harness"},
+            {"label": "Material", "value": "Tempered steel"},
+            {"label": "Cost", "value": "Equivalent to a small farm"},
+            {"label": "Pieces", "value": "200+ individual components"}
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Siege Warfare",
+        "image": "siege.jpg",
         "category": "Castles",
-        "date": "1078",
-        "description": "A fortress, palace, and prison at the heart of English history."
+        "date": "900-1400",
+        "year": 900,
+        "description": "The art of breaking down walls — and the art of keeping them standing.",
+        "subtitle": "c. 900–1400 — Western Europe",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "Siege warfare was one of the defining features of medieval conflict. When armies could not defeat an enemy in open battle, they turned to besieging their castles and fortified towns. A successful siege required patience, resources, and a wide array of specialized weapons and techniques."
+            },
+            {
+                "heading": "Siege Weapons",
+                "content": "Medieval armies employed a variety of siege engines. The trebuchet, a counterweight catapult, could hurl massive stones weighing over 100kg at castle walls. Battering rams attacked gates, while siege towers allowed attackers to climb over walls. Miners dug tunnels beneath walls to collapse them."
+            },
+            {
+                "heading": "Defenders' Tactics",
+                "content": "Castle defenders were not passive. They poured boiling water and heated sand onto attackers below, used crossbows from arrow slits, and made sorties to destroy siege equipment. A well-stocked castle with a determined garrison could hold out for months or even years."
+            },
+            {
+                "heading": "Famous Sieges",
+                "content": "The Siege of Jerusalem in 1099 during the First Crusade lasted five weeks before the city fell. The Siege of Orléans in 1428-29 was famously broken by Joan of Arc. The Siege of Constantinople in 1453 marked the end of the Byzantine Empire when Ottoman cannons finally breached its ancient walls."
+            }
+        ],
+        "facts": [
+            {"label": "Period", "value": "c. 900–1400"},
+            {"label": "Key weapon", "value": "Trebuchet"},
+            {"label": "Longest siege", "value": "Siege of Candia, 21 years"},
+            {"label": "Key factor", "value": "Food and water supply"},
+            {"label": "End of era", "value": "Gunpowder artillery, 15th century"}
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Bodiam Castle",
+        "image": "bodiam.jpg",
+        "category": "Castles",
+        "date": "1385",
+        "year": 1385,
+        "description": "One of England's most picturesque and complete medieval castles.",
+        "subtitle": "Built 1385 — East Sussex, England",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "Bodiam Castle is a late 14th century moated castle in East Sussex, England. Built in 1385 by Sir Edward Dalyngrigge, it is one of the finest examples of late medieval military architecture in Britain and remains remarkably intact nearly 650 years after its construction."
+            },
+            {
+                "heading": "Construction",
+                "content": "Sir Edward Dalyngrigge received a licence to build Bodiam Castle from King Richard II in 1385, ostensibly to defend against French invasion during the Hundred Years War. The castle was built from scratch on a new site, allowing for a perfectly symmetrical design with towers at each corner and the middle of each wall."
+            },
+            {
+                "heading": "Design",
+                "content": "Bodiam is a quadrangular castle surrounded by a wide moat. It features multiple layers of defence, with the main gate protected by a drawbridge, portcullis, and murder holes in the ceiling. The symmetrical design with towers at each corner was both practical and visually imposing."
+            },
+            {
+                "heading": "Legacy",
+                "content": "Bodiam Castle was slighted — deliberately damaged — during the English Civil War in the 17th century to prevent its use as a Royalist stronghold. It was later purchased and partially restored by Lord Curzon, who bequeathed it to the National Trust in 1925. Today it is one of the most visited castles in England."
+            }
+        ],
+        "facts": [
+            {"label": "Built", "value": "1385"},
+            {"label": "Built by", "value": "Sir Edward Dalyngrigge"},
+            {"label": "Location", "value": "East Sussex, England"},
+            {"label": "Type", "value": "Quadrangular moated castle"},
+            {"label": "Status", "value": "National Trust property"}
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Medieval Guilds",
+        "image": "guilds.jpg",
+        "category": "Peasant Life",
+        "date": "1000-1400",
+        "year": 1000,
+        "description": "The trade associations that controlled medieval commerce and craftsmanship.",
+        "subtitle": "c. 1000–1400 — Western Europe",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "Medieval guilds were associations of craftsmen and merchants who controlled the practice of their trade in a particular town or city. They set standards of quality, regulated prices, trained apprentices, and provided social support for their members. Guilds were a defining feature of medieval urban life."
+            },
+            {
+                "heading": "Structure",
+                "content": "Every guild had a strict hierarchy. At the bottom were apprentices — boys as young as ten who lived with a master craftsman and learned the trade in exchange for their labor. After several years an apprentice became a journeyman, a skilled worker who could be hired by any master. The highest rank was master, achieved by producing a masterpiece — a work of exceptional quality judged by the guild."
+            },
+            {
+                "heading": "Power and Influence",
+                "content": "Guilds wielded enormous power in medieval towns. They controlled who could practice a trade, set prices, and maintained quality standards. Guild members dominated town councils and influenced local politics. Unauthorized workers — called blacklegs — who practiced a trade without guild membership faced heavy fines and confiscation of their goods."
+            },
+            {
+                "heading": "Decline",
+                "content": "The guild system began to break down in the 15th and 16th centuries as trade expanded beyond local markets. The rise of capitalism, mass production, and international trade made the rigid guild structure increasingly impractical. By the 18th century most guilds had lost their regulatory power."
+            }
+        ],
+        "facts": [
+            {"label": "Period", "value": "c. 1000–1400"},
+            {"label": "Ranks", "value": "Apprentice, Journeyman, Master"},
+            {"label": "Key function", "value": "Quality control and trade regulation"},
+            {"label": "Location", "value": "Medieval towns and cities"},
+            {"label": "Legacy", "value": "Basis for modern trade unions"}
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Medieval Farming",
+        "image": "farming.jpg",
+        "category": "Peasant Life",
+        "date": "500-1400",
+        "year": 500,
+        "description": "How the medieval world fed itself — and why it so often failed.",
+        "subtitle": "c. 500–1400 — Western Europe",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "Agriculture was the foundation of medieval society. Over 90% of the population were farmers, and the entire feudal system depended on the food they produced. Medieval farming was labor intensive, weather dependent, and frequently insufficient — famine was a constant threat throughout the Middle Ages."
+            },
+            {
+                "heading": "The Three Field System",
+                "content": "The most significant agricultural innovation of the medieval period was the three field system, introduced around the 8th century. Fields were divided into three sections — one planted with winter crops, one with spring crops, and one left fallow to recover. This rotation improved yields and reduced soil exhaustion compared to the earlier two field system."
+            },
+            {
+                "heading": "Daily Life",
+                "content": "A peasant farmer's year was governed entirely by the agricultural calendar. Spring meant plowing and planting, summer meant weeding and tending livestock, autumn meant the exhausting harvest, and winter meant repairing tools and slaughtering animals that could not be fed through the cold months. There was little distinction between work and survival."
+            },
+            {
+                "heading": "Famine",
+                "content": "Crop failure was a constant danger. The Great Famine of 1315-1322 killed millions across Northern Europe when years of cold wet weather destroyed harvests. Peasants ate seed grain, bark, and in extreme cases resorted to eating the dead. It was one of the worst disasters in medieval history, and came just decades before the Black Death."
+            }
+        ],
+        "facts": [
+            {"label": "Period", "value": "c. 500–1400"},
+            {"label": "System", "value": "Three field rotation"},
+            {"label": "Main crops", "value": "Wheat, rye, barley, oats"},
+            {"label": "Great Famine", "value": "1315–1322"},
+            {"label": "Population farming", "value": "Over 90% of medieval people"}
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Joan of Arc",
+        "image": "joan.jpg",
+        "category": "Kings & Courts",
+        "date": "1412-1431",
+        "year": 1412,
+        "description": "The peasant girl who led France to victory and was burned as a heretic.",
+        "subtitle": "1412–1431 — France",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "Joan of Arc is one of the most remarkable figures in medieval history. Born a peasant girl in rural France, she claimed to hear the voices of saints commanding her to drive the English from France. Against all probability, she convinced the French court to give her command of an army — and proceeded to turn the tide of the Hundred Years War."
+            },
+            {
+                "heading": "The Voices",
+                "content": "From the age of thirteen, Joan reported hearing the voices of Saint Michael, Saint Catherine, and Saint Margaret. They told her France would be saved through her actions and that she must support the Dauphin Charles in reclaiming his throne. In 1429, at age seventeen, she traveled to the royal court and somehow convinced Charles to give her an army."
+            },
+            {
+                "heading": "Military Campaigns",
+                "content": "Joan's impact was immediate and dramatic. She lifted the Siege of Orléans in just nine days after it had lasted months. She led the French army to a series of victories that culminated in the coronation of Charles VII at Reims in July 1429 — fulfilling the central part of her mission. Her military career lasted only about a year but transformed the war."
+            },
+            {
+                "heading": "Trial and Execution",
+                "content": "Joan was captured by the Burgundians in 1430 and sold to the English. She was tried for heresy and witchcraft in an ecclesiastical court controlled by English interests. Despite conducting her own defense with remarkable intelligence, she was convicted and burned at the stake in Rouen on 30 May 1431. She was nineteen years old. Twenty five years later she was fully rehabilitated by the Church."
+            }
+        ],
+        "facts": [
+            {"label": "Born", "value": "c. 6 January 1412"},
+            {"label": "Died", "value": "30 May 1431, Rouen"},
+            {"label": "Age at death", "value": "19 years old"},
+            {"label": "Key victory", "value": "Siege of Orléans, 1429"},
+            {"label": "Canonized", "value": "1920 by Pope Benedict XV"}
+        ]
+    },
+    {
+        "id": 17,
+        "title": "Richard the Lionheart",
+        "image": "richardv2.jpg",
+        "category": "Kings & Courts",
+        "date": "1157-1199",
+        "year": 1157,
+        "description": "England's warrior king who spent almost no time in England.",
+        "subtitle": "1157–1199 — England and the Holy Land",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "Richard I of England, known as Richard the Lionheart, is one of the most celebrated warrior kings in medieval history. Renowned for his military prowess and chivalric conduct, he led the Third Crusade and came closer than any other Christian leader to recapturing Jerusalem from Saladin."
+            },
+            {
+                "heading": "The Third Crusade",
+                "content": "Richard's defining achievement was his leadership of the Third Crusade from 1189 to 1192. He recaptured the port city of Acre after a long siege, won a decisive victory at the Battle of Arsuf, and advanced to within sight of Jerusalem. Despite his military successes, he ultimately failed to retake the city and negotiated a peace treaty with Saladin that allowed Christian pilgrims access to Jerusalem."
+            },
+            {
+                "heading": "A King Rarely in England",
+                "content": "Despite being King of England for ten years, Richard spent only about six months in the country. He viewed England primarily as a source of revenue to fund his military campaigns. He famously said he would sell London itself if he could find a buyer. His kingdom was administered by capable ministers while he fought abroad."
+            },
+            {
+                "heading": "Death",
+                "content": "Richard died anticlimactically in 1199, struck by a crossbow bolt while besieging a minor castle in France. The wound became infected and he died twelve days later. He forgave his killer before dying — a gesture of chivalry that became legendary. He was succeeded by his brother John, whose reign would lead directly to Magna Carta."
+            }
+        ],
+        "facts": [
+            {"label": "Born", "value": "8 September 1157"},
+            {"label": "Died", "value": "6 April 1199"},
+            {"label": "Reign", "value": "1189–1199"},
+            {"label": "Key campaign", "value": "Third Crusade, 1189–1192"},
+            {"label": "Cause of death", "value": "Crossbow bolt wound infection"}
+        ]
+    },
+    {
+        "id": 18,
+        "title": "The Black Monks",
+        "image": "benedictine.png",
+        "category": "The Church",
+        "date": "529-1400",
+        "year": 529,
+        "description": "The Benedictine monks who preserved knowledge through the Dark Ages.",
+        "subtitle": "Founded 529 AD — Western Europe",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "The Benedictine monks, known as the Black Monks for their black habits, were the dominant monastic order of the early Middle Ages. Founded by Saint Benedict of Nursia in 529 AD, they followed the Rule of Saint Benedict — a practical guide to monastic life that balanced prayer, work, and study."
+            },
+            {
+                "heading": "The Rule of Saint Benedict",
+                "content": "The Rule of Saint Benedict divided the monk's day into three equal parts — prayer, work, and study. Monks gathered seven times a day for communal prayer, worked in the monastery's fields and workshops, and spent hours copying and studying manuscripts. The Rule emphasized stability — monks took a vow to remain in one monastery for life."
+            },
+            {
+                "heading": "Preservers of Knowledge",
+                "content": "During the turbulent early Middle Ages, Benedictine monasteries became the primary repositories of learning in Western Europe. Monks copied classical texts, maintained libraries, ran schools, and produced illuminated manuscripts of extraordinary beauty. Without their efforts, much of classical literature and learning would have been lost forever."
+            },
+            {
+                "heading": "Wealth and Decline",
+                "content": "Benedictine monasteries accumulated enormous wealth through donations, land grants, and agricultural production. By the 12th century many had become powerful institutions more concerned with administration than spirituality. Reform movements — including the Cistercians and Franciscans — emerged in reaction to this perceived corruption, seeking a return to simpler monastic ideals."
+            }
+        ],
+        "facts": [
+            {"label": "Founded", "value": "529 AD by Saint Benedict"},
+            {"label": "Habit color", "value": "Black"},
+            {"label": "Key text", "value": "Rule of Saint Benedict"},
+            {"label": "Key role", "value": "Preservation of classical knowledge"},
+            {"label": "Peak", "value": "8th–12th centuries"}
+        ]
+    },
+    {
+        "id": 19,
+        "title": "The Viking Raids",
+        "image": "viking.jpg",
+        "category": "Warfare",
+        "date": "793-1066",
+        "year": 793,
+        "description": "The Norse warriors who terrorized Europe for nearly three centuries.",
+        "subtitle": "793–1066 — Northern Europe and Beyond",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "The Viking Age began on 8 June 793 when Norse warriors attacked the monastery of Lindisfarne off the northeast coast of England. For the next two and a half centuries, Viking raiders from Scandinavia terrorized coastlines from Ireland to the Mediterranean, establishing trade routes, founding settlements, and reshaping the political map of Europe."
+            },
+            {
+                "heading": "The Longship",
+                "content": "The Vikings' greatest technological achievement was the longship — a sleek, shallow-drafted vessel that could cross the open ocean and navigate rivers alike. Longships could be beached directly on shore, allowing raiders to strike without warning and withdraw before defenders could respond. They were works of extraordinary engineering that gave the Vikings unmatched mobility."
+            },
+            {
+                "heading": "Beyond Raiding",
+                "content": "The popular image of Vikings as purely destructive raiders is misleading. They were also skilled traders who established routes from Scandinavia to Constantinople and the Middle East. They founded Dublin, discovered Iceland and Greenland, and reached North America five centuries before Columbus. Norse settlers in northern France became the Normans — who conquered England in 1066."
+            },
+            {
+                "heading": "End of the Viking Age",
+                "content": "The Viking Age is generally considered to have ended with the Battle of Stamford Bridge in 1066, when the English King Harold defeated the Norwegian King Harald Hardrada. Three weeks later Harold himself was defeated at Hastings by the Normans — themselves descendants of Viking settlers. The age of Viking raids gave way to the High Middle Ages."
+            }
+        ],
+        "facts": [
+            {"label": "Period", "value": "793–1066"},
+            {"label": "First raid", "value": "Lindisfarne, 793"},
+            {"label": "Origin", "value": "Scandinavia (Norway, Denmark, Sweden)"},
+            {"label": "Key vessel", "value": "The longship"},
+            {"label": "End of era", "value": "Battle of Stamford Bridge, 1066"}
+        ]
+    },
+    {
+        "id": 20,
+        "title": "The Domesday Book",
+        "image": "domesday.jpg",
+        "category": "Kings & Courts",
+        "date": "1086",
+        "year": 1086,
+        "description": "William the Conqueror's extraordinary survey of his new kingdom.",
+        "subtitle": "Compiled 1086 — England",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "The Domesday Book is one of the most remarkable administrative achievements of the medieval world. Commissioned by William the Conqueror in 1085 and completed in 1086, it was a comprehensive survey of landholdings and resources across almost all of England — a record of who owned what, how much it was worth, and how much tax was owed."
+            },
+            {
+                "heading": "The Survey",
+                "content": "William sent commissioners across England to gather information from every county. They interviewed local jurors in each area, recording the name of every estate, who owned it before the Norman Conquest, who owned it now, how many people lived there, how much land and livestock it had, and what it was worth. The thoroughness of the survey was unprecedented in medieval Europe."
+            },
+            {
+                "heading": "Why It Was Made",
+                "content": "William needed the survey for two reasons — to assess how much tax he could raise, and to resolve the inevitable disputes over land ownership that followed the Norman Conquest. By recording who held what land, the Domesday Book settled ownership disputes with legal finality. Contemporaries noted grimly that there was no appeal from its judgments — just as there was none from the Last Judgment."
+            },
+            {
+                "heading": "Legacy",
+                "content": "The Domesday Book survives to this day in the National Archives in London. It remains one of the most complete records of a medieval society ever compiled, offering historians an unparalleled snapshot of 11th century England. It is still occasionally cited in English legal cases involving ancient land rights."
+            }
+        ],
+        "facts": [
+            {"label": "Commissioned", "value": "1085 by William the Conqueror"},
+            {"label": "Completed", "value": "1086"},
+            {"label": "Coverage", "value": "Almost all of England"},
+            {"label": "Purpose", "value": "Tax assessment and land ownership"},
+            {"label": "Location", "value": "National Archives, London"}
+        ]
+    },
+    {
+        "id": 21,
+        "title": "Medieval Medicine",
+        "image": "medicine.jpg",
+        "category": "Peasant Life",
+        "date": "500-1400",
+        "year": 500,
+        "description": "Herbs, bloodletting, and the four humours — how medieval people tried to stay alive.",
+        "subtitle": "c. 500–1400 — Western Europe",
+        "sections": [
+            {
+                "heading": "Overview",
+                "content": "Medieval medicine was a mixture of classical theory, Christian belief, herbal knowledge, and superstition. Physicians were rare and expensive — most ordinary people relied on local healers, wise women, and home remedies. Despite its limitations, medieval medicine was not entirely without merit, and some herbal treatments have been validated by modern science."
+            },
+            {
+                "heading": "The Four Humours",
+                "content": "Medieval medicine was based on the ancient Greek theory of the four humours — blood, phlegm, yellow bile, and black bile. Disease was thought to result from an imbalance of these humours. Treatment therefore aimed to restore balance, typically by removing excess humour through bloodletting, purging, or sweating. While entirely wrong by modern standards, the system was internally consistent and remained dominant for over a thousand years."
+            },
+            {
+                "heading": "Herbal Medicine",
+                "content": "Alongside humoral theory, medieval healers maintained a rich tradition of herbal medicine. Monasteries cultivated physic gardens growing dozens of medicinal plants — lavender for anxiety, willow bark for pain (which contains salicylic acid, the active ingredient in aspirin), garlic as an antiseptic, and many others. This practical knowledge, passed down through generations, formed the basis of European pharmacy."
+            },
+            {
+                "heading": "Surgery",
+                "content": "Medieval surgery was crude but not entirely ineffective. Surgeons performed amputations, removed bladder stones, and treated wounds. Without anaesthesia, speed was essential — a skilled surgeon could amputate a limb in under a minute. Alcohol and herbs were used to dull pain and prevent infection, with varying success. Survival rates from surgery were surprisingly reasonable given the conditions."
+            }
+        ],
+        "facts": [
+            {"label": "Theory", "value": "Four humours (Greek origin)"},
+            {"label": "Key treatment", "value": "Bloodletting and purging"},
+            {"label": "Herbal remedy", "value": "Willow bark (proto-aspirin)"},
+            {"label": "Main healers", "value": "Physicians, barber-surgeons, wise women"},
+            {"label": "Key institution", "value": "Monastic infirmaries"}
+        ]
     }
-]
+
+]                                                                                                                                                                                
