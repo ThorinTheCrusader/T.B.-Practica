@@ -88,9 +88,11 @@ form.addEventListener("submit", function(event) {
     existingUsers.push(user);
     localStorage.setItem('users', JSON.stringify(existingUsers));
 
-    showSuccess('Account created! Redirecting...');
+    localStorage.setItem('loggedInUser', JSON.stringify(user));
+
+    showSuccess('Account created! Welcome, ' + name + '! Redirecting...');
 
     setTimeout(function() {
-        window.location.href = '../html/login.html';
+        window.location.href = '../html/index.html';
     }, 2000);
 })

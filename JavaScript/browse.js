@@ -1,5 +1,5 @@
 var searchInput = document.querySelector('.nav-search input');
-const searchBtn = document.querySelector('.nav-search button');
+var searchBtn = document.querySelector('.nav-search button');
 let cards;
 
 fetch('../data/entries.json')

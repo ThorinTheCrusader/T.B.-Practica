@@ -1,8 +1,6 @@
 const searchBtn = document.querySelector('.nav-search button');
-const searchInput = document.querySelector('.nav-search input');
 const isBrowsePage = window.location.pathname.includes('browse.html');
 
-// 1. The bridge between JSON names and your CSS classes
 const categoryClassMap = {
     "Warfare": "warfare",
     "Castles & Keeps": "castles",
@@ -12,7 +10,6 @@ const categoryClassMap = {
     "Arms & Armour": "arms"
 };
 
-// 2. The mapping for your specific descriptions
 const categoryDescriptions = {
     "Warfare": "Battles, sieges, tactics, and the knights who fought them.",
     "Castles & Keeps": "Architecture, defense, and the lords within the walls.",
@@ -34,11 +31,8 @@ fetch('../data/entries.json')
             categories.forEach(cat => {
                 const card = document.createElement('a');
                 
-                // Use encodeURIComponent for the URL so '&' doesn't break it
                 card.href = `../html/browse.html?category=${encodeURIComponent(cat)}`;
                 
-                // LINK TO YOUR CSS: 
-                // We use the map to find 'church' or 'warfare' to match your .card-X classes
                 const styleClass = categoryClassMap[cat] || cat.toLowerCase().replace(/\s+/g, '-');
                 card.className = `card card-${styleClass}`;
                 
@@ -52,6 +46,9 @@ fetch('../data/entries.json')
     });
 
 if (!isBrowsePage) {
+
+    const searchInput = document.querySelector('.nav-search input');
+
     function doSearch() {
         const term = searchInput.value.trim();
         if (term !== '') {
